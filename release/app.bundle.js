@@ -182,7 +182,7 @@
 
 
 	// module
-	exports.push([module.id, "\n.home_btn{width: 100%;font-size: 0;text-align: center;\n}\n.home_btn a{display: inline-block;vertical-align: middle;font-size: 12px;color: #fff;padding: 10px 25px;margin: 0 8px;cursor: pointer;border-radius: 6px;transition: all ease 0.2s;-webkit-transition: all ease 0.2s;\n}\n.home_btn a:first-child{background: rgba(1,215,178,1);\n}\n.home_btn a:first-child:hover{background: rgba(1,215,178,0.8);\n}\n.home_btn a:last-child{background: rgba(255,81,81,1);\n}\n.home_btn a:last-child:hover{background: rgba(255,81,81,0.8);\n}\n", ""]);
+	exports.push([module.id, "\r\n\t\r\n/*\t.home_btn{width: 100%;font-size: 0;text-align: center;}\r\n\t.home_btn a{display: inline-block;vertical-align: middle;font-size: 12px;color: #fff;padding: 10px 25px;margin: 0 8px;cursor: pointer;border-radius: 6px;transition: all ease 0.2s;-webkit-transition: all ease 0.2s;}\r\n\t.home_btn a:first-child{background: rgba(1,215,178,1);}\r\n\t.home_btn a:first-child:hover{background: rgba(1,215,178,0.8);}\r\n\t.home_btn a:last-child{background: rgba(255,81,81,1);}\r\n\t.home_btn a:last-child:hover{background: rgba(255,81,81,0.8);}*/\r\n", ""]);
 
 	// exports
 
@@ -500,8 +500,8 @@
 		name: 'home',
 		data: function () {
 			return {
-				showLogin: false,
-				showSignup: false
+				// showLogin: false,
+				// showSignup:false
 			};
 		}
 	});
@@ -512,6 +512,8 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;
+	  return _vm._m(0)
+	},staticRenderFns: [function (){var _vm=this;
 	  return _vm._h('div', {
 	    staticClass: "all_center",
 	    staticStyle: {
@@ -524,32 +526,12 @@
 	    staticStyle: {
 	      "color": "#fff"
 	    }
-	  }, ["欢迎到来，fucker"]), " ", _vm._h('h2', {
+	  }, ["欢迎到来，fuc1ker"]), " ", _vm._h('h2', {
 	    staticStyle: {
 	      "color": "#fff"
 	    }
-	  }, ["请先登录 杀杀杀速度222"]), " ", _vm._h('div', {
-	    staticClass: "home_btn"
-	  }, [_vm._h('a', {
-	    attrs: {
-	      "href": "javascript:void(0)"
-	    },
-	    on: {
-	      "click": function($event) {
-	        _vm.showLogin = !_vm.showLogin
-	      }
-	    }
-	  }, ["登录"]), " ", _vm._h('a', {
-	    attrs: {
-	      "href": "javascript:void(0)"
-	    },
-	    on: {
-	      "click": function($event) {
-	        _vm.showSignup = !_vm.showSignup
-	      }
-	    }
-	  }, ["注册"])])])
-	},staticRenderFns: []}
+	  }, ["请先登录 杀杀杀速度222"]), " "])
+	}]}
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
